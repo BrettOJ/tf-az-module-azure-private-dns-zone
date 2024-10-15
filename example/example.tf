@@ -30,13 +30,5 @@ module "azure_private_dns_zone" {
   resource_group_name    = module.resource_groups.rg_output.1.name
   tags                   = local.tags
   naming_convention_info = local.naming_convention_info
-  soa_record = {
-    email        = "admin@mydomain.com"
-    expire_time  = 3600
-    minimum_ttl  = 300
-    refresh_time = 3600
-    retry_time   = 600
-    ttl          = 300
-    tags         = null
-  }
+
 }

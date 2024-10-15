@@ -22,6 +22,8 @@ variable "soa_record" {
     ttl          = number
     tags         = map(string)
   })
+  default = null
+  
 }
 
 variable "naming_convention_info" {
