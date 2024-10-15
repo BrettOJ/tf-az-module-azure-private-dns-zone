@@ -13,7 +13,7 @@ variable "tags" {
 
 variable "soa_record" {
   description = "The SOA record for the Private DNS Zone."
-  type = map(object({
+  type = object({
     email        = string
     expire_time  = number
     minimum_ttl  = number
@@ -21,7 +21,7 @@ variable "soa_record" {
     retry_time   = number
     ttl          = number
     tags         = map(string)
-  }))
+  })
 }
 
 variable "naming_convention_info" {

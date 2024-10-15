@@ -1,6 +1,6 @@
 resource "azurerm_private_dns_zone" "azure_prv_dns" {
   name                = var.domain_name
-  resource_group_name = module.resource_groups.rg_output.1.name
+  resource_group_name = var.resource_group_name
   tags                = var.tags
   soa_record {
     email        = var.soa_record.email
