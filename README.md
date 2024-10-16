@@ -1,3 +1,8 @@
+## for private endpoint DNS zone names please refer the Microsoft documentation
+
+https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#virtual-network-and-on-premises-workloads-using-a-dns-forwarder
+
+
 Enables you to manage Private DNS zones within Azure DNS. These zones are hosted on Azure's name servers.
 
 ## [Example Usage](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_dns_zone#example-usage)

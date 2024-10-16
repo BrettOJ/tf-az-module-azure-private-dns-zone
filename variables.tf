@@ -26,7 +26,14 @@ variable "soa_record" {
   
 }
 
-variable "naming_convention_info" {
-  description = "A mapping of naming convention information."
-  type        = map(string)
+variable "dns_a_record" {
+  description = "The A record for the Private DNS Zone."
+  type = map(object({
+    name                = string
+    zone_name           = string
+    resource_group_name = string
+    ttl                 = number
+    records             = list(string)
+  }))
+  default = null
 }
